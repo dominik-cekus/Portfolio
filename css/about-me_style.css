@@ -429,11 +429,26 @@ header.desktop li#activeLink:hover {
     display: -ms-flexbox;
     display: flex;
   }
+  header.desktop .menu__list {
+    width: 70%;
+  }
+  header.desktop li#activeLink a {
+    font-size: 1.2rem;
+  }
   .content__mobile {
     display: none;
   }
   .content__desktop {
     display: block;
+  }
+  .content__desktop .content__background {
+    width: 50%;
+  }
+  .content__desktop .description__title {
+    font-size: 1.2rem;
+  }
+  .content__desktop .description__text {
+    font-size: 0.8rem;
   }
   .footer .footer__text {
     width: 20%;
@@ -445,6 +460,35 @@ header.desktop li#activeLink:hover {
 }
 
 @media only screen and (min-width: 1200px) {
+  header.desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header.desktop .menu__list {
+    width: 50%;
+  }
+  header.desktop .menu__item {
+    padding: 10px;
+  }
+  header.desktop li#activeLink a {
+    font-size: 1.4rem;
+  }
+  .content__desktop {
+    display: block;
+  }
+  .content__desktop .content__background {
+    width: 30%;
+  }
+  .content__desktop .description__title {
+    font-size: 1.5rem;
+  }
+  .content__desktop .description__text {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
   header.desktop {
     display: -webkit-box;
     display: -ms-flexbox;

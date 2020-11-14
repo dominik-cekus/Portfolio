@@ -9,7 +9,7 @@ document.querySelectorAll('.footer, .content__mobile').forEach((e)=>{e.addEventL
 const personProperty= [
     {
     title: `Personal data`,
-    pText: `Name: Dominik Cekus\n\nDate of birth: 20.11.1997\n\nMail: dominik.cekus@gmail.com\n\nLinkedin: linkedin.com/in/dominikcekus\n\nGitHub: https://github.com/dominik-cekus/Portfolio`,
+    pText: `Name: Dominik Cekus\n\nDate of birth: 20.11.1997\n\nMail: dominik.cekus@gmail.com\n\nLinkedin: linkedin.com/in/dominikcekus\n\nGitHub: github.com/dominik-cekus/`,
     backgroundImgUrl : "./images/my-photo.jpg",
     h1color: "#ddd",
     pColor: "#ddd",
@@ -45,7 +45,7 @@ function initialSettingsMobile()
     document.querySelector('.content__mobile  .description__title').textContent = `${personProperty[0].title}`;
     document.querySelector('.content__mobile .background__slider').setAttribute('src',`${personProperty[0].backgroundImgUrl}`);
     document.querySelector('.content__mobile  .description__title').style.color = `${personProperty[0].h1color}`;
-    document.querySelector('.content__mobile #dots__about').classList.add('active');
+    document.querySelector('.content__mobile #dots__about-mobile').classList.add('active');
     document.querySelector('.content__mobile  .background__slider-shadow').style.backgroundColor = `rgba(0,0,0,0.8)`;
     document.querySelector('.content__mobile  .description__text').textContent = `${personProperty[0].pText}`;
     document.querySelector('.content__mobile  .description__text').style.color = `${personProperty[0].pColor}`;
@@ -56,7 +56,7 @@ function initialSettingsDesktop()
     document.querySelector('.content__desktop  .description__title').textContent = `${personProperty[0].title}`;
     document.querySelector('.content__desktop .background__slider').setAttribute('src',`${personProperty[0].backgroundImgUrl}`);
     document.querySelector('.content__desktop  .description__title').style.color = `${personProperty[0].h1color}`;
-    document.querySelector('.content__desktop #dots__about').classList.add('active');
+    document.querySelector('.content__desktop #dots__about-desktop').classList.add('active');
     document.querySelector('.content__desktop  .background__slider-shadow').style.backgroundColor = `rgba(0,0,0,0.7)`;
     document.querySelector('.content__desktop  .description__text').textContent = `${personProperty[0].pText}`;
     document.querySelector('.content__desktop  .description__text').style.color = `${personProperty[0].pColor}`;

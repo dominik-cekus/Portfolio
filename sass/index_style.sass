@@ -379,10 +379,14 @@ header.desktop
         display: none
     header.desktop
         display: flex
+        .menu__list
+            width: 70%
     .content__mobile
         display: none
     .content__desktop
         display: block
+        .content__board
+            height: 40%
     .footer
         .footer__text
             width: 20% 
@@ -390,6 +394,18 @@ header.desktop
         .footer__icon
             font-size: 1.4rem
 @media only screen and (min-width: 1200px)
+    header.desktop
+        display: flex 
+        .menu__list
+            width: 50%
+        .menu__item
+            padding: 10px
+        .menu__link
+            font-size: 1.2rem
+    .content__desktop
+        .content__board
+            height: 35%
+@media only screen and (min-width: 1500px)
     header.desktop
         display: flex 
         .menu__list

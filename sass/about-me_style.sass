@@ -289,10 +289,20 @@ header.desktop
         display: none
     header.desktop
         display: flex
+        .menu__list
+            width: 70%
+        li#activeLink  a
+            font-size: 1.2rem
     .content__mobile
         display: none
     .content__desktop
         display: block
+        .content__background
+            width: 50%
+        .description__title
+            font-size: 1.2rem
+        .description__text
+            font-size: 0.8rem
     .footer
         .footer__text
             width: 20% 
@@ -300,6 +310,23 @@ header.desktop
         .footer__icon
             font-size: 1.4rem
 @media only screen and (min-width: 1200px)
+    header.desktop
+        display: flex 
+        .menu__list
+            width: 50%
+        .menu__item
+            padding: 10px
+        li#activeLink  a
+            font-size: 1.4rem
+    .content__desktop
+        display: block
+        .content__background
+            width: 30%
+        .description__title
+            font-size: 1.5rem
+        .description__text
+            font-size: 1rem
+@media only screen and (min-width: 1500px)
     header.desktop
         display: flex 
         .menu__list
