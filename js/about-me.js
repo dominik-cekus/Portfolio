@@ -9,7 +9,7 @@ document.querySelectorAll('.footer, .content__mobile').forEach((e)=>{e.addEventL
 const personProperty= [
     {
     title: `Personal data`,
-    pText: `Name: Dominik Cekus\n\nDate of birth: 20.11.1997\n\nMail: dominik.cekus@gmail.com\n\nLinkedin: linkedin.com/in/dominikcekus\n\nGitHub: github.com/dominik-cekus/`,
+    pText: `Name: Dominik Cekus\n\nDate of birth: 20.11.1997\n\nMail: dominik.cekus@gmail.com\n\nLinkedin: linkedin.com/in/dominikcekus\n\nGitHub: github.com/dominik-cekus`,
     backgroundImgUrl : "./images/my-photo.jpg",
     h1color: "#ddd",
     pColor: "#ddd",
