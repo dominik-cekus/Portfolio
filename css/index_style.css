@@ -240,7 +240,7 @@ header.desktop li#activeLink:hover {
   position: absolute;
   height: 45%;
   width: 70%;
-  top: 50%;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
