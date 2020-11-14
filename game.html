@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website on competition">
+    <meta name="keywords" content="Profile, Website, Dominik Cekus">
+    <meta name="author" content="Dominik Cekus">
+    <title>Game</title>
+    <script src="https://kit.fontawesome.com/c1c8cf601d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/game_style.css">
+</head>
+<body>
+    <header class="mobile">
+        <div class="logo">
+            <span class="logo__name">d</span>
+            <i class="fab fa-ethereum logo__icon"></i>
+            <span class="logo__name">c</span>
+        </div>
+        <i class="fas fa-bars menu__icon"></i>
+        <ul class="menu__list">
+            <li class="menu__item"><a href="./index.html" class="menu__link">home</a></li>
+            <li class="menu__item"><a href="./about.html" class="menu__link">about me</a></li>
+            <li class="menu__item"><a href="./game.html" class="menu__link">game</a></li>
+            <li class="menu__item"><a href="./contact.html" class="menu__link">contact</a></li>
+        </ul>
+    </header>
+
+    <header class="desktop">
+        <div class="logo">
+            <span class="logo__name">d</span>
+            <i class="fab fa-ethereum logo__icon"></i>
+            <span class="logo__name">c</span>
+        </div>
+        <ul class="menu__list">
+            <li class="menu__item"><a href="./index.html" class="menu__link">home</a></li>
+            <li class="menu__item"><a href="./about.html" class="menu__link">about me</a></li>
+            <li class="menu__item" id="activeLink"><a href="./game.html" class="menu__link" >game</a></li>
+            <li class="menu__item"><a href="./contact.html" class="menu__link" >contact</a></li>
+        </ul>
+    </header>
+    <div class="content__mobile">
+        <div class="content__background-shadow"></div>
+        <div class="content__description">
+            <h1 class="description__title">Slot machine</h1>
+            <p class="description__text">This is a game known as One-Armed Bandit. Rules are so simply. You bet amount of money and click SPIN. Only three the same or different fruits make you winner and cause you will have 
+                two times more money what you bet. Pay Attention ! Don't loose all of money. Have fun..</p>
+        </div>
+        <div class="content__wrap">
+
+            <h1 class="wrap__title">Bet money!</h1>
+            <div class="wrap__game">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+            </div>
+            <div class="wrap__play">
+              <input type="number" placeholder="Bet $" id="bid" class="wrap__bid">
+              <button id="start" class="wrap__twist">Spin</button>
+            </div>
+            <div class="wrap__panel">money: <span class="wrap__wallet"></span></div>
+            <div class="wrap__score">
+              <span class="wrap__result"></span> You played <span class="wrap__number-game"></span> games, won <span class="wrap__win"></span> times
+              and lost <span class="wrap__loss"></span>
+            </div>
+        
+          </div>
+    </div>
+
+    <div class="content__desktop">
+        <div class="content__background-shadow"></div>
+        <div class="content__description">
+            <h1 class="description__title">Slot machine</h1>
+            <p class="description__text">This is a game known as One-Armed Bandit. Rules are so simply. You bet amount of money and click SPIN. Only three the same or different fruits will let you win and you will have twice as much money as you bet. Note ! Don't waste all your money. Have fun..</p>
+        </div>
+        <div class="content__wrap">
+
+            <h1 class="wrap__title">Bet money!</h1>
+            <div class="wrap__game">
+              <div class="color--desktop"></div>
+              <div class="color--desktop"></div>
+              <div class="color--desktop"></div>
+            </div>
+            <div class="wrap__play">
+              <input type="number" placeholder="Bet $" id="bid--desktop" class="wrap__bid">
+              <button id="start--desktop" class="wrap__twist">Spin</button>
+            </div>
+            <div class="wrap__panel">money: <span class="wrap__wallet"></span></div>
+            <div class="wrap__score">
+              <span class="wrap__result"></span> You played <span class="wrap__number-game"></span> games, won <span class="wrap__win"></span> times
+              and lost <span class="wrap__loss"></span>
+            </div>
+        
+          </div>
+    </div>
+    <footer class="footer">
+        <span class="footer__text">Find me on
+            <a href="https://www.facebook.com/dominik.cekus" target="_blank">
+                <i class="fab fa-facebook-square footer__icon"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/dominikcekus" target="_blank">
+                <i class="fab fa-linkedin footer__icon"></i>
+            </a>
+        </span>
+    </footer>
+    <script src="./js/game/Draw.js"></script>
+    <script src="./js/game/Result.js"></script>
+    <script src="./js/game/Statistics.js"></script>
+    <script src="./js/game/Wallet.js"></script>
+    <script src="./js/game/Game.js"></script>
+    <script src="./js/game/main.js"></script>
+</body>
+</html>

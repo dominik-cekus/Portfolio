@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website on competition">
+    <meta name="keywords" content="Profile, Website, Dominik Cekus">
+    <meta name="author" content="Dominik Cekus">
+    <title>Contact</title>
+    <script src="https://kit.fontawesome.com/c1c8cf601d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/contact_style.css">
+</head>
+
+<body>
+    <header class="mobile">
+        <div class="logo">
+            <span class="logo__name">d</span>
+            <i class="fab fa-ethereum logo__icon"></i>
+            <span class="logo__name">c</span>
+        </div>
+        <i class="fas fa-bars menu__icon"></i>
+        <ul class="menu__list">
+            <li class="menu__item"><a href="./index.html" class="menu__link">home</a></li>
+            <li class="menu__item"><a href="./about.html" class="menu__link">about me</a></li>
+            <li class="menu__item"><a href="./game.html" class="menu__link">game</a></li>
+            <li class="menu__item"><a href="./contact.html" class="menu__link">contact</a></li>
+        </ul>
+    </header>
+
+    <header class="desktop">
+        <div class="logo">
+            <span class="logo__name">d</span>
+            <i class="fab fa-ethereum logo__icon"></i>
+            <span class="logo__name">c</span>
+        </div>
+        <ul class="menu__list">
+            <li class="menu__item"><a href="./index.html" class="menu__link">home</a></li>
+            <li class="menu__item"><a href="./about.html" class="menu__link">about me</a></li>
+            <li class="menu__item"><a href="./game.html" class="menu__link">game</a></li>
+            <li class="menu__item" id="activeLink"><a href="./contact.html" class="menu__link" >contact</a></li>
+        </ul>
+    </header>
+    <div class="content__mobile">
+        <div class="content__background-shadow"></div>
+        <form action="" class="form">
+            <h1 class="form__main-text">Message</h1>
+            <div class="form__container">
+                <label for="form__name-mobile" class="form__description"><i class="far fa-user form__icon"></i></label>
+                <input type="text" name="form__name" id="form__name-mobile" class="form__name"
+                    placeholder="Enter your name">
+            </div>
+            <div class="form__container">
+                <label for="form__mail-mobile" class="form__description"><i class="fas fa-at form__icon"></i></label>
+                <input type="text" name="form__mail" id="form__mail-mobile" class="form__mail"
+                    placeholder="Enter your email">
+            </div>
+            <textarea name="message" cols="30" rows="8" class="form__message"
+                placeholder="Type a short message.."></textarea>
+            <button type="submit" class="form__submit" disabled>send</button>
+        </form>
+    </div>
+
+    <div class="content__desktop">
+        <div class="content__background-shadow"></div>
+        <form action="" class="form">
+            <h1 class="form__main-text">Message</h1>
+            <div class="form__container">
+                <label for="form__name-desktop" class="form__description"><i class="far fa-user form__icon"></i></label>
+                <input type="text" name="form__name" id="form__name-desktop" class="form__name"
+                    placeholder="Enter your name">
+            </div>
+            <div class="form__container">
+                <label for="form__mail-desktop" class="form__description"><i class="fas fa-at form__icon"></i></label>
+                <input type="text" name="form__mail" id="form__mail-desktop" class="form__mail"
+                    placeholder="Enter your email">
+            </div>
+            <textarea name="message" cols="30" rows="5" class="form__message"
+                placeholder="Type a short message.."></textarea>
+            <button type="submit" class="form__submit" disabled>send</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <span class="footer__text">Find me on
+            <a href="https://www.facebook.com/dominik.cekus" target="_blank">
+                <i class="fab fa-facebook-square footer__icon"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/dominikcekus" target="_blank">
+                <i class="fab fa-linkedin footer__icon"></i>
+            </a>
+        </span>
+    </footer>
+    <script src="./js/contact.js"></script>
+</body>
+
+</html>

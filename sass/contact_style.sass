@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap')
+*
+    margin: 0px
+    padding: 0px
+    box-sizing: border-box
+::root
+    font-size: 13px
+    scroll-behavior: smooth
+body
+    font-family: 'Montserrat'
+    height: 100vh
+    overflow: hidden
+//HEADER
+header.mobile
+    position: relative
+    display: flex
+    width: 100%
+    height: 10%
+    background-color: #000
+    box-shadow: 0px 0px 30px 20px #000
+    justify-content: space-between
+    flex-wrap: wrap
+    z-index: 1
+    .logo
+        height: 100%
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        margin-left: 3%
+    .logo__name
+        color: #fff
+        font-size: 1.4rem
+        text-transform: uppercase
+    .logo__icon
+        color: #fff
+        font-size: 1.2rem
+    .menu__icon
+        color: #fff
+        font-size: 1.8rem
+        align-self: center
+        cursor: pointer
+        margin-right: 3%
+    .menu__list
+        position: absolute
+        display: flex
+        top: -300%
+        width: 100%
+        height: 20%
+        flex-direction: column
+        align-self: flex-end
+        justify-content: space-between
+        align-items: center
+        list-style: none
+        transition: top 0.3s
+    .activeNavigation
+        top: 70%
+
+    .menu__item
+        flex: 1
+        font-weight: 700
+        padding: 10px
+        border: 2px solid transparent
+        text-align: center
+        border-radius: 2%
+        transition: 0.3s
+        border-bottom: 2px solid green
+        width: 80%
+    .menu__link
+        padding: 10px 30px
+        text-decoration: none
+        text-transform: uppercase
+        color: #fff
+        font-size: 1rem   
+
+header.desktop
+    position: relative
+    display: none
+    width: 100%
+    height: 10%
+    background-color: #000
+    box-shadow: 0px 0px 30px 20px #000
+    flex-direction: column
+    flex-wrap: wrap
+    z-index: 1
+    .logo
+        height: 100%
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        margin-left: 3%
+    .logo__name
+        color: #fff
+        font-size: 2rem
+        text-transform: uppercase
+    .logo__icon
+        color: #fff
+        font-size: 1.8rem
+    .menu__list
+        width: 55%
+        height: 100%
+        display: flex
+        align-self: flex-end
+        justify-content: space-between
+        align-items: center
+        list-style-type: none
+        margin-right: 2%
+    .menu__item
+        flex: 1
+        font-weight: 700
+        padding: 5px
+        border: 2px solid transparent
+        text-align: center
+        border-radius: 2%
+        transition: 0.3s
+    .menu__link
+        display: block
+        text-decoration: none
+        text-transform: uppercase
+        color: green
+        font-size: 1rem
+
+    .menu__item:hover
+        border: 2px solid #fff
+
+    li#activeLink  a
+        border-bottom: 1px solid white 
+        padding-bottom: 10px
+        font-size: 1.4rem
+
+    li#activeLink:hover 
+        border: 2px solid transparent
+          
+//CONTENT 
+.content__mobile
+    display: block
+    position: relative
+    width: 100%
+    height: 90%
+    background-image: url('../images/index-background.png')
+    background-size: cover
+    background-repeat: no-repeat
+    // z-index: -1       
+    .content__background-shadow
+        position: absolute
+        height: 100%
+        width: 100%
+        background-color: rgba(0,0,0,0.1)
+    .form
+        position: absolute
+        height: 50%
+        width: 70%
+        background-color: transparent
+        top: 58%
+        left: 50%
+        transform: translate(-50%,-50%)
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: space-between
+    .form__main-text
+        display: block
+        width: 55%
+        color: #fff
+        font-size: 1.8rem
+        border-bottom: 4px solid green
+    .form__container
+        display: flex
+    .form__name, .form__mail
+        background-color: transparent
+        color: #fff
+        flex: 10
+    .form__icon
+        color: #fff
+    .form__description
+        flex: 1
+    .form__submit
+        display: block
+        width: 30%
+        height: 10%
+        background-color: transparent
+        border: 2px solid green
+        border-radius: 5%
+        color: #fff
+        align-self: flex-end
+        text-transform: uppercase
+        font-family: 'Montserrat'
+    .form__message
+        border-radius: 2%
+        background-color: transparent
+        color: #fff
+
+.content__desktop
+    display: none
+    position: relative
+    width: 100%
+    height: 90%
+    background-image: url('../images/index-background.png')
+    background-size: cover
+    background-repeat: no-repeat
+    
+    .content__background-shadow
+        position: absolute
+        height: 100%
+        width: 100%
+        background-color: rgba(0,0,0,0.5)
+    .form
+        position: absolute
+        height: 60%
+        width: 25%
+        background-color: transparent
+        top: 55%
+        left: 50%
+        transform: translate(-50%,-50%)
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: space-between
+        z-index: 0  
+    .form__main-text
+        display: block
+        width: 50%
+        color: #fff
+        font-size: 2.3rem
+        border-bottom: 4px solid green
+    .form__container
+        display: flex
+        height: 8%
+        align-items: center
+    .form__name, .form__mail
+        background-color: transparent
+        color: #fff
+        flex: 10
+        height: 80%
+    .form__icon
+        color: #fff
+        font-size: 1.5rem
+    .form__description
+        flex: 1
+    .form__submit
+        display: block
+        width: 30%
+        height: 10%
+        background-color: transparent
+        border: 2px solid green
+        border-radius: 5%
+        color: #fff
+        align-self: flex-end
+        text-transform: uppercase
+        font-family: 'Montserrat'
+        cursor: pointer
+        font-weight: 700
+        font-size: 1.1rem
+        position: relative
+        overflow: hidden
+        
+    button.form__submit::after
+        content: ""
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: green
+        bottom: -100%
+        left: 0
+        transition: 0.3s
+        z-index: -1
+        
+    button.form__submit:hover::after
+        bottom: 0%
+
+    .form__message
+        border-radius: 2%
+        background-color: transparent
+        color: #fff
+        font-size: 1.2rem
+        padding: 2%
+
+//FOOTER
+.footer
+    height: 6%
+    width: 100%
+    position: absolute
+    left: 0
+    bottom: 0
+    background-color: transparent
+    display: flex
+    justify-content: center
+    align-items: center
+    
+    .footer__text
+        font-size: 0.8rem
+        color: #a8a4a4
+        width: 60%
+        text-align: center
+        
+    .footer__icon
+        font-size: 1.1rem
+        color: #a8a4a4
+        margin-left: 3%
+
+@media only screen and (width: 768px) 
+    header.mobile
+        display: none
+    header.desktop
+        display: flex
+    .content__mobile
+        display: none
+    .content__desktop
+        display: block
+        .form
+            height: 40%
+        .form__main-text
+            width: 90%
+        .form__icon
+            font-size: 1.1rem
+        .form__submit
+            font-size: 0.8rem
+        
+    .footer
+        .footer__text
+            width: 20% 
+            font-size: 1rem
+        .footer__icon
+            font-size: 1.4rem
+@media only screen and (min-width: 768px) 
+    header.mobile
+        display: none
+    header.desktop
+        display: flex
+    .content__mobile
+        display: none
+    .content__desktop
+        display: block
+    .footer
+        .footer__text
+            width: 20% 
+            font-size: 1rem
+        .footer__icon
+            font-size: 1.4rem
+@media only screen and (min-width: 1200px)
+    header.desktop
+        display: flex 
+        .menu__list
+            width: 40%
+        .menu__item
+            padding: 10px
+        .menu__link
+            font-size: 1.2rem
