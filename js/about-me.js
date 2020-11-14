@@ -18,7 +18,7 @@ const personProperty= [
     title: "Education",
     pText: `AGH University of Science and Technology\n\n\nOil&Gas Engineering\nBachelor degree 2016-2020 completed\n\nComputer science in Environmental Science\nBachelor degree 2018-2022`,
     backgroundImgUrl : "./images/agh.jpg",
-    h1color: "#00b4d8",
+    h1color: "#cbc0d3",
     pColor: "#ddd",
     },
     {   
@@ -32,11 +32,11 @@ const personProperty= [
     title:   "Hobbies",
     pText: `Cooking\n\nTravelling\n\nMotorization\n\nInnovation Technologies\n\nJournalism\n\nFootball`,
     backgroundImgUrl : "./images/hobbies.jpg",
-    h1color: "#ddd",
+    h1color: "#f4a261",
     pColor: "#ddd",
     }
 ];
-   
+
 const listOfPropertiesMobile = [...document.querySelectorAll('.content__mobile .background__dots span')];
 const listOfPropertiesDesktop = [...document.querySelectorAll('.content__desktop .background__dots span')];
 
