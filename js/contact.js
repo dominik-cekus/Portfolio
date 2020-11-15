@@ -20,14 +20,12 @@ formSubmitDesktop.addEventListener("click",(e)=>{
     if(formNameDesktop.value === "" || noAllWhiteSpaces.test(formNameDesktop.value) || !letterAndSpacesFirstUppercase.test(formNameDesktop.value))
     {
         alert('Name is incorrect');
-        formNameDesktop.value = "";
         formSubmitDesktop.disabled = false;
     }
     else if(formMailDesktop.value === "" || noAllWhiteSpaces.test(formMailDesktop.value)
     || !validEmail.test(formMailDesktop.value))
     {
         alert('Mail is incorrect');
-        formMailDesktop.value = "";
         formSubmitDesktop.disabled = false;
     }
     else{
