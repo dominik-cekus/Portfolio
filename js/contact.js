@@ -30,7 +30,7 @@ formSubmitDesktop.addEventListener("click",(e)=>{
     }
     else{
         formSubmitDesktop.disabled = false;
-        alert('Message sent');
+        alert('Message has been sent.');
         formMessageDesktop.value = "";
         formMailDesktop.value = "";
         formNameDesktop.value = "";
