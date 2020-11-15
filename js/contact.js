@@ -10,6 +10,7 @@ const formNameDesktop= document.querySelector('.content__desktop .form__name');
 const formMailDesktop= document.querySelector('.content__desktop .form__mail');
 const formSubmitDesktop = document.querySelector('.content__desktop .form__submit');
 const formMessageDesktop = document.querySelector('.content__desktop .form__message');
+
 formSubmitDesktop.addEventListener("click",(e)=>{
     e.preventDefault();
     formSubmitDesktop.disabled = true;
